@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = 'rozee01/tp3_devops'
+        DOCKER_IMAGE = 'NA5KO/tp3_devops'
         HELM_CHART_PATH = './tp3'
     }
     stages {
         stage('Cloner le dépôt') {
             steps {
-                git 'https://github.com/rozee01/Lab3_Devops.git'
+                git 'https://github.com/NA5KO/Lab3_Devops.git'
             }
         }
         stage('Construire l\'image Docker') {
