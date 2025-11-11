@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'na5ko/tp3_devops'
+        DOCKER_IMAGE = 'amine101yahya/tp3_devops'
         HELM_CHART_PATH = './tp3'
     }
 
