@@ -5,11 +5,7 @@ pipeline {
         HELM_CHART_PATH = './tp3'
     }
     stages {
-        stage('Cloner le dépôt') {
-            steps {
-                git 'https://github.com/NA5KO/Lab3_Devops.git'
-            }
-        }
+
         stage('Construire l\'image Docker') {
             steps {
                 bat 'docker build -t %DOCKER_IMAGE% .'
